@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(./long-trumpet-sketch-blackboard_1379-544.avif);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size:cover;
+    height: 100vh;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 40px;
+    color: white;
+}
+
+#navbar .right-navbar ul li{
+  list-style: none;
+  font-size: 25px;
+  float:left;
+  margin: 20px;
+}
+
+#navbar .right-navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar .right-navbar ul li a:hover{
+    color: gray;
+}
+
+#title{
+    text-align: center;
+    color: white;
+}
