@@ -1,21 +1,25 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-image: url(./long-trumpet-sketch-blackboard_1379-544.avif);
     background-repeat: no-repeat;
-    background-position:top;
-    background-size:cover;
-    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    height: 100%;
     font-family: "Cabin Sketch", sans-serif;
     font-weight: 700;
     font-style: normal;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
 }
 
-#navbar{
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,23 +27,105 @@ body{
     color: white;
 }
 
-#navbar .right-navbar ul li{
-  list-style: none;
-  font-size: 25px;
-  float:left;
-  margin: 20px;
+#navbar .right-navbar ul li {
+    list-style: none;
+    font-size: 25px;
+    float: left;
+    margin: 20px;
 }
 
-#navbar .right-navbar ul li a{
+#navbar .right-navbar ul li a {
     text-decoration: none;
     color: white;
 }
 
-#navbar .right-navbar ul li a:hover{
+#navbar .right-navbar ul li a:hover {
     color: gray;
 }
 
-#title{
-    text-align: center;
+#body {
     color: white;
+    text-align: center;
+    flex: 1;
+}
+
+.container-text {
+    position: absolute;
+}
+
+.text-1 {
+    transform: rotate(27deg) translateX(700px) translateY(-40px);
+    transform-origin: center;
+    transition: transform 0.5s;
+}
+
+.text-2 {
+    transform: rotate(27deg) translateX(510px) translateY(110px);
+    transform-origin: center;
+    transition: transform 0.5s;
+}
+
+.text-3 {
+    transform: rotate(27deg) translateX(900px) translateY(145px);
+    transform-origin: center;
+    transition: transform 0.5s;
+}
+
+#video {
+    transform: rotate(27deg) translateX(230px) translateY(125px);
+    transform-origin: center;
+    transition: transform 0.5s;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    margin-top: auto;
+    border: 1px solid white;
+    margin-top: 800px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.footer ul li a:hover {
+    color: gray;
+}
+
+.input {
+    margin-top: 20px;
+}
+
+.input input[type="email"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.input input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #bac9bb65;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.input input[type="submit"]:hover {
+    background-color: #9fa29f;
 }

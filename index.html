@@ -1,32 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Trombone Harmonics</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <head>
-        <div id="navbar">
-            <div class="left-navbar">
-               <h1> <i class="fa-solid fa-music"></i>  Trombone Harmonics </h1>
-            </div>
-            <div class="right-navbar">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Price</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+      <div id="navbar">
+        <div class="left-navbar">
+          <h1>
+            <i class="fa-solid fa-music header-img"></i> Trombone Harmonics
+          </h1>
         </div>
-    </head>
-    <main id="title">
+        <div class="right-navbar">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Price</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <main id="body">
+      <div class="title">
         <h1>Welcome to the Trombone Harmonics</h1>
+      </div>
+      <div class="container-text">
+        <div class="text-1">
+          <h4>one of our offers</h4>
+        </div>
+        <div class="text-2">
+          <h4>you can select</h4>
+        </div>
+        <div class="text-3">
+          <h4>and if you liked it</h4>
+        </div>
+        <div id="video">
+          <iframe
+            width="300"
+            height="200"
+            src="https://www.youtube.com/embed/AXTiMXQlIxI?si=2t_H-qsrR81FQVp-"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h3>Here is just an example of what we can offer</h3>
+        </div>
+      </div>
     </main>
-</body>
-</body>
+    <footer>
+      <div class="footer">
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Forum</a></li>
+        </ul>
+      </div>
+      <div class="input">
+        <form id="form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your e-mail address"
+          />
+          <input type="submit" name="submit" id="submit" />
+        </form>
+      </footer> 
+  </body>
 </html>
